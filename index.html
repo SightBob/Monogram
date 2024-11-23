@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Monogram Consoles and Modules | Monogram Creative Console</title>
+
+    <!-- link tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link remixIcon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link style css -->
+    <link rel="stylesheet" href="./asset/style/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkฺBlue: "#1a2456",
+                        lightOrange: "#ff8b68",
+                        lightGray: "#f0efed",
+                        darkBlack: "#080b1b",
+                        mediumGray: "rgb(239, 194, 179)"
+                    },
+                    screens: {
+                        '2xl': "1200px",
+                        xl: "1200px",
+                        lg: "992px",
+                        md: "768px",
+                        sm: "576px"
+                    },
+                    container: {
+                        center: true,
+                        width: '90%',
+                        maxWidth: {
+                            xl: "1140px",
+                            lg: "960px",
+                            md: "720px",
+                            sm: "540px"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="main-body">
+
+    <header class="fixed z-[60] w-full px-[1rem] pt-[1rem] max-sm:px-[.3rem] max-sm:pt-[.3rem]" id="header">
+
+        <div class="flex items-center bg-darkฺBlue text-[#efc2b3] py-[.5rem] px-[.5rem] max-sm:px-[.2rem] max-lg:justify-between">
+
+            <div class="nav__logo">
+                <svg height="38" viewBox="0 0 520 114" fill="currentColor"><title>Monogram</title><path d="M150,36V0H0V114H150ZM144,6V36H78V6ZM6,6H72V72H6ZM72,108H6V78H72Zm72,0H78V78h0V42h66Z"></path><rect x="35.5" y="17" width="6" height="44"></rect><rect x="53" y="17" width="6" height="44"></rect><rect x="18" y="17" width="6" height="44"></rect><path d="M111.5,50a25,25,0,1,0,25,25A25,25,0,0,0,111.5,50Zm0,44a19,19,0,1,1,19-19A19,19,0,0,1,111.5,94Z"></path><polygon points="206.809 62.675 197.497 42.37 191.584 42.37 191.586 72.048 197.523 72.048 197.523 55.206 205.264 72.048 208.374 72.048 216.112 55.206 216.112 72.048 222.042 72.048 222.042 42.37 216.116 42.37 206.809 62.675"></polygon><path d="M254.479,43.7a17.5,17.5,0,0,0-16.021,0,14.407,14.407,0,0,0-5.676,5.491,16.649,16.649,0,0,0,.006,16.083,14.247,14.247,0,0,0,5.671,5.463h0a16.777,16.777,0,0,0,7.787,1.927h.248a16.4,16.4,0,0,0,7.991-1.946,14.508,14.508,0,0,0,5.675-5.474,16.621,16.621,0,0,0-.006-16.063A14.429,14.429,0,0,0,254.479,43.7Zm.2,18.682a8.787,8.787,0,0,1-3.407,3.376,10.262,10.262,0,0,1-9.593,0,8.734,8.734,0,0,1-3.417-3.363,11.047,11.047,0,0,1-.026-10.274,8.733,8.733,0,0,1,3.407-3.394,9.8,9.8,0,0,1,4.858-1.211,9.653,9.653,0,0,1,4.81,1.209,8.786,8.786,0,0,1,3.38,3.384A11.041,11.041,0,0,1,254.678,62.38Z"></path><polygon points="289.285 61.212 276.742 42.59 276.593 42.37 270.888 42.37 270.888 72.048 277.114 72.048 277.114 53.166 289.807 72.048 295.512 72.048 295.512 42.37 289.285 42.37 289.285 61.212"></polygon><path d="M327.94,43.7a17.506,17.506,0,0,0-16.024,0,14.414,14.414,0,0,0-5.676,5.491,16.639,16.639,0,0,0,.006,16.083,14.249,14.249,0,0,0,5.672,5.463h0a16.767,16.767,0,0,0,7.786,1.927h.251a16.358,16.358,0,0,0,7.991-1.946,14.5,14.5,0,0,0,5.675-5.473,16.607,16.607,0,0,0-.006-16.064A14.435,14.435,0,0,0,327.94,43.7Zm.2,18.682a8.819,8.819,0,0,1-3.408,3.377,9.828,9.828,0,0,1-4.8,1.189,9.686,9.686,0,0,1-4.8-1.19,8.739,8.739,0,0,1-3.419-3.363,11.052,11.052,0,0,1-.024-10.274,8.715,8.715,0,0,1,3.4-3.394,10.261,10.261,0,0,1,9.668,0,8.777,8.777,0,0,1,3.379,3.384A11.047,11.047,0,0,1,328.139,62.38Z"></path><path d="M360.847,60.071H365.7V65.68a12.124,12.124,0,0,1-9.842-.3A8.491,8.491,0,0,1,352.4,62.02a10.373,10.373,0,0,1-1.257-5.21,9.7,9.7,0,0,1,1.33-5.127,8.954,8.954,0,0,1,3.6-3.382,10.926,10.926,0,0,1,5.151-1.2,18.4,18.4,0,0,1,5.167.676,10.671,10.671,0,0,1,3.971,2.157l.826.71v-6.31l-.207-.15a13.858,13.858,0,0,0-4.574-2.173,21.461,21.461,0,0,0-5.627-.681,17.6,17.6,0,0,0-8.264,1.9,13.706,13.706,0,0,0-5.647,5.445,17.611,17.611,0,0,0,.008,16.272,13.557,13.557,0,0,0,5.631,5.413l.474.233.011-.025a20.172,20.172,0,0,0,18.694-1.363l.237-.147V54.911H360.847Z"></path><path d="M430.287,41.958h-5.74L412.621,71.636h6.435l2.59-6.606h11.5l2.633,6.606h6.391L430.412,42.271Zm1.033,17.766h-7.845L427.4,49.45Z"></path><polygon points="476.574 41.958 467.268 62.263 457.955 41.958 452.043 41.958 452.031 71.636 457.969 71.636 457.969 54.794 465.709 71.636 468.82 71.636 476.56 54.794 476.56 71.636 482.501 71.636 482.501 41.958 476.574 41.958"></polygon><path d="M404.4,57.222a9.5,9.5,0,0,0,1.649-5.623,9.138,9.138,0,0,0-2.779-7.193,11.069,11.069,0,0,0-7.683-2.448H383.069V71.636h6.225v-10.5h4.883l5.554,10.5h6.483l-5.959-11.25A9.062,9.062,0,0,0,404.4,57.222Zm-4.579-5.62a3.694,3.694,0,0,1-1.351,3.125,6.154,6.154,0,0,1-3.8,1.1h-.024l-5.345,0V47.266h5.345C398.172,47.266,399.817,48.633,399.818,51.6Z"></path></svg>
+            </div>
+            
+            <!-- menu -->
+            <div class="nav__menu ml-auto max-lg:fixed max-lg:top-0 max-lg:left-[-100%] max-lg:h-full max-lg:z-[1] max-lg:flex max-lg:flex-col max-lg:bg-[#1a2456] max-lg:max-w-[22rem] max-lg:w-full transition-[left] duration-300" id="nav-menu">
+               
+                <!-- logo in menu -->
+                <div class="w-full h-[6rem] border-b border-gray-500 flex items-center px-[1.5rem] lg:hidden justify-between">
+                    <svg height="38" viewBox="0 0 520 114" fill="currentColor"><title>Monogram</title><path d="M150,36V0H0V114H150ZM144,6V36H78V6ZM6,6H72V72H6ZM72,108H6V78H72Zm72,0H78V78h0V42h66Z"></path><rect x="35.5" y="17" width="6" height="44"></rect><rect x="53" y="17" width="6" height="44"></rect><rect x="18" y="17" width="6" height="44"></rect><path d="M111.5,50a25,25,0,1,0,25,25A25,25,0,0,0,111.5,50Zm0,44a19,19,0,1,1,19-19A19,19,0,0,1,111.5,94Z"></path><polygon points="206.809 62.675 197.497 42.37 191.584 42.37 191.586 72.048 197.523 72.048 197.523 55.206 205.264 72.048 208.374 72.048 216.112 55.206 216.112 72.048 222.042 72.048 222.042 42.37 216.116 42.37 206.809 62.675"></polygon><path d="M254.479,43.7a17.5,17.5,0,0,0-16.021,0,14.407,14.407,0,0,0-5.676,5.491,16.649,16.649,0,0,0,.006,16.083,14.247,14.247,0,0,0,5.671,5.463h0a16.777,16.777,0,0,0,7.787,1.927h.248a16.4,16.4,0,0,0,7.991-1.946,14.508,14.508,0,0,0,5.675-5.474,16.621,16.621,0,0,0-.006-16.063A14.429,14.429,0,0,0,254.479,43.7Zm.2,18.682a8.787,8.787,0,0,1-3.407,3.376,10.262,10.262,0,0,1-9.593,0,8.734,8.734,0,0,1-3.417-3.363,11.047,11.047,0,0,1-.026-10.274,8.733,8.733,0,0,1,3.407-3.394,9.8,9.8,0,0,1,4.858-1.211,9.653,9.653,0,0,1,4.81,1.209,8.786,8.786,0,0,1,3.38,3.384A11.041,11.041,0,0,1,254.678,62.38Z"></path><polygon points="289.285 61.212 276.742 42.59 276.593 42.37 270.888 42.37 270.888 72.048 277.114 72.048 277.114 53.166 289.807 72.048 295.512 72.048 295.512 42.37 289.285 42.37 289.285 61.212"></polygon><path d="M327.94,43.7a17.506,17.506,0,0,0-16.024,0,14.414,14.414,0,0,0-5.676,5.491,16.639,16.639,0,0,0,.006,16.083,14.249,14.249,0,0,0,5.672,5.463h0a16.767,16.767,0,0,0,7.786,1.927h.251a16.358,16.358,0,0,0,7.991-1.946,14.5,14.5,0,0,0,5.675-5.473,16.607,16.607,0,0,0-.006-16.064A14.435,14.435,0,0,0,327.94,43.7Zm.2,18.682a8.819,8.819,0,0,1-3.408,3.377,9.828,9.828,0,0,1-4.8,1.189,9.686,9.686,0,0,1-4.8-1.19,8.739,8.739,0,0,1-3.419-3.363,11.052,11.052,0,0,1-.024-10.274,8.715,8.715,0,0,1,3.4-3.394,10.261,10.261,0,0,1,9.668,0,8.777,8.777,0,0,1,3.379,3.384A11.047,11.047,0,0,1,328.139,62.38Z"></path><path d="M360.847,60.071H365.7V65.68a12.124,12.124,0,0,1-9.842-.3A8.491,8.491,0,0,1,352.4,62.02a10.373,10.373,0,0,1-1.257-5.21,9.7,9.7,0,0,1,1.33-5.127,8.954,8.954,0,0,1,3.6-3.382,10.926,10.926,0,0,1,5.151-1.2,18.4,18.4,0,0,1,5.167.676,10.671,10.671,0,0,1,3.971,2.157l.826.71v-6.31l-.207-.15a13.858,13.858,0,0,0-4.574-2.173,21.461,21.461,0,0,0-5.627-.681,17.6,17.6,0,0,0-8.264,1.9,13.706,13.706,0,0,0-5.647,5.445,17.611,17.611,0,0,0,.008,16.272,13.557,13.557,0,0,0,5.631,5.413l.474.233.011-.025a20.172,20.172,0,0,0,18.694-1.363l.237-.147V54.911H360.847Z"></path><path d="M430.287,41.958h-5.74L412.621,71.636h6.435l2.59-6.606h11.5l2.633,6.606h6.391L430.412,42.271Zm1.033,17.766h-7.845L427.4,49.45Z"></path><polygon points="476.574 41.958 467.268 62.263 457.955 41.958 452.043 41.958 452.031 71.636 457.969 71.636 457.969 54.794 465.709 71.636 468.82 71.636 476.56 54.794 476.56 71.636 482.501 71.636 482.501 41.958 476.574 41.958"></polygon><path d="M404.4,57.222a9.5,9.5,0,0,0,1.649-5.623,9.138,9.138,0,0,0-2.779-7.193,11.069,11.069,0,0,0-7.683-2.448H383.069V71.636h6.225v-10.5h4.883l5.554,10.5h6.483l-5.959-11.25A9.062,9.062,0,0,0,404.4,57.222Zm-4.579-5.62a3.694,3.694,0,0,1-1.351,3.125,6.154,6.154,0,0,1-3.8,1.1h-.024l-5.345,0V47.266h5.345C398.172,47.266,399.817,48.633,399.818,51.6Z"></path></svg>
+              
+                       <!-- nav close  -->
+                    <div class="nav__close lg:hidden" id="nav-close">
+                        <i class="ri-close-line text-3xl"></i>
+                    </div>
+                </div>
+               
+                <ul class="flex items-center max-lg:items-end space-x-7 text-xs max-lg:text-sm tracking-widest cursor-pointer max-lg:flex max-lg:flex-col max-lg:space-x-0">
+                    <li class="max-lg:w-[75%] max-lg:border-b max-lg:border-gray-500 py-4"><a href="#">HOW IT WORKS</a></li>
+                    <li class="max-lg:w-[75%] py-2"><div class="dropdown__main">
+                        <div class="dropdown__btn flex items-center" id="open-dropdown">
+                            <div class="">WORKFLOWS</div> 
+                            <span><i class="ri-arrow-drop-down-fill text-xl"></i></span>
+                        </div>
+                        <div id="dropdown-one" class=" mt-2 uppercase dropdown__link bg-white flex-col space-y-2 p-4 font-light tracking-[.2em] text-[.925rem] lg:hidden lg:absolute max-lg:tracking-widest max-lg:bg-transparent max-lg:p-0 max-lg:space-y-0 max-lg:ps-5">
+                            <a href="#" class="max-lg:border-b max-lg:border-gray-500 max-lg:py-4 max-lg:block max-lg:text-[#efc2b3]">Audio Console</a>
+                            <a href="#" class="max-lg:border-b max-lg:border-gray-500 max-lg:py-4 max-lg:block max-lg:text-[#efc2b3]">Photo Console</a>
+                            <a href="#" class="max-lg:border-b max-lg:border-gray-500 max-lg:py-4 max-lg:block max-lg:text-[#efc2b3]">Video Console</a>
+                            <a href="#" class="max-lg:border-b max-lg:border-gray-500 max-lg:py-4 max-lg:block max-lg:text-[#efc2b3]">Mini Console</a>
+                        </div>
+                    </div></li>
+                    <li class="max-lg:w-[75%] max-lg:border-b max-lg:border-gray-500 py-4"><a href="#">DOWNLOAD</a></li>
+                    <li class="max-lg:w-[75%] max-lg:border-b max-lg:border-gray-500 py-4"><a href="#">BLOG</a></li>
+                    <li class="max-lg:w-[75%] max-lg:border-b max-lg:border-gray-500 py-4"><a href="#">SUPPORT</a></li>
+                    <li class="max-lg:w-[75%] max-lg:border-b max-lg:border-gray-500 py-4 font-bold"><a href="#">SHOP</a></li>
+                </ul>
+
+            </div>
+
+            <div class="flex items-center space-x-2 ml-5 cursor-pointer">
+                
+                <!-- nav toggle -->
+                <div class="nav__toggle lg:hidden" id="nav-toggle">
+                    <i class="ri-menu-line text-2xl"></i>
+                </div>
+
+                <!-- icon bag -->
+                <div class="">
+                    <i class="ri-shopping-bag-line text-2xl font-normal"></i>
+                </div>
+
+                <div class="text-sm">
+                    <select id="cars" class="outline-none bg-transparent">
+                        <option value="USD" selected>USD ($)</option>
+                        <option value="CAD">CAD ($)</option>
+                        <option value="EUR">EUR (€)</option>
+                        <option value="AUD">AUD ($)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="KRW">KRW (₩)</option>
+                        <option value="JPY">JPY (¥)</option>
+                      </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="" id="model-bg"></div>
+    </header>
+    
+    <div class="bg-[url('./asset/img/main-banner.jpg')] bg-cover bg-center bg-no-repeat h-[100svh] main-banner relative flex justify-center items-center">
+        
+        <div class="relative z-[22] text-mediumGray max-w-[30em] text-center"> 
+            <h2 class="text-4xl font-semibold tracking-widest">A CONSOLE FOR EVERY WORKFLOW</h2>
+            <p class="mt-3 tracking-widest text-[.975rem]">Discover the perfect console for yours.</p>
+        </div>
+        
+        <div class="absolute z-[22] text-mediumGray left-[50%] bottom-0 translate-x-[-50%]">
+            <a href="#section-1">
+                <i class="ri-arrow-down-s-line text-6xl text-white"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="py-[3rem] bg-[#f0efed]" id="section-1">
+        <div class="container grid grid-cols-2 gap-4 row-sp">
+            
+            <div class="col-span-1 max-md:col-span-2">
+                <div class="group">
+                    <!-- img -->
+                    <div class="relative">
+                        <img class="" src="./asset/img/item-1-1.jpg" alt="">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200" src="./asset/img/item-1-2.jpg" alt="">
+                        <div class="absolute z-[22] top-[1rem] right-0 bg-lightOrange w-fit px-5 py-1.5">
+                            <p class="text-[.875rem] font-semibold tracking-wider text-[#212529]">PRE-ORDER</p>
+                        </div>
+                    </div>
+                    <!-- detai -->
+                    <div class="pt-2 text-[#1a2456]">
+                        <div class="flex justify-between min-h-[2rem]">
+                            <p>MINI CONSOLE</p>
+                            <p class="group-hover:hidden">US$249</p>
+                            <div class="group-hover:block hidden px-4 py-1 h-fit bg-[#1a2456] rounded-full text-white">   
+                                <p class="text-sm font-medium">SHOP NOW</p>
+                            </div>
+                        </div>
+                        <p class="text-[#1a2456] text-xs font-light">Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="col-span-1 max-md:col-span-2">
+                <div class="group">
+                    <!-- img -->
+                    <div class="relative">
+                        <img class="" src="./asset/img/item-2-1.jpg" alt="">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200" src="./asset/img/item-2-2.jpg" alt="">
+                        <div class="absolute z-[22] top-[1rem] right-0 bg-lightOrange w-fit px-5 py-1.5">
+                            <p class="text-[.875rem] font-semibold tracking-wider text-[#212529]">PRE-ORDER</p>
+                        </div>
+                    </div>
+                    <!-- detai -->
+                    <div class="pt-2 text-[#1a2456]">
+                        <div class="flex justify-between min-h-[2rem]">
+                            <p>MINI CONSOLE</p>
+                            <p class="group-hover:hidden">US$499</p>
+                            <div class="group-hover:block hidden px-4 py-1 h-fit bg-[#1a2456] rounded-full text-white">   
+                                <p class="text-sm font-medium">SHOP NOW</p>
+                            </div>
+                        </div>
+                        <p class="text-[#1a2456] text-xs font-light">Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="col-span-1 max-md:col-span-2">
+                <div class="group">
+                    <!-- img -->
+                    <div class="relative">
+                        <img class="" src="./asset/img/item-3-1.jpg" alt="">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200" src="./asset/img/item-3-2.jpg" alt="">
+                        <div class="absolute z-[22] top-[1rem] right-0 bg-lightOrange w-fit px-5 py-1.5">
+                            <p class="text-[.875rem] font-semibold tracking-wider text-[#212529]">PRE-ORDER</p>
+                        </div>
+                    </div>
+                    <!-- detai -->
+                    <div class="pt-2 text-[#1a2456]">
+                        <div class="flex justify-between min-h-[2rem]">
+                            <p>MINI CONSOLE</p>
+                            <p class="group-hover:hidden">US$249</p>
+                            <div class="group-hover:block hidden px-4 py-1 h-fit bg-[#1a2456] rounded-full text-white">   
+                                <p class="text-sm font-medium">SHOP NOW</p>
+                            </div>
+                        </div>
+                        <p class="text-[#1a2456] text-xs font-light">Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="col-span-1 max-md:col-span-2">
+                <div class="group">
+                    <!-- img -->
+                    <div class="relative">
+                        <img class="" src="./asset/img/item-4-1.jpg" alt="">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200" src="./asset/img/item-4-2.jpg" alt="">
+                        <div class="absolute z-[22] top-[1rem] right-0 bg-lightOrange w-fit px-5 py-1.5">
+                            <p class="text-[.875rem] font-semibold tracking-wider text-[#212529]">PRE-ORDER</p>
+                        </div>
+                    </div>
+                    <!-- detai -->
+                    <div class="pt-2 text-[#1a2456]">
+                        <div class="flex justify-between min-h-[2rem]">
+                            <p>MINI CONSOLE</p>
+                            <p class="group-hover:hidden">US$249</p>
+                            <div class="group-hover:block hidden px-4 py-1 h-fit bg-[#1a2456] rounded-full text-white">   
+                                <p class="text-sm font-medium">SHOP NOW</p>
+                            </div>
+                        </div>
+                        <p class="text-[#1a2456] text-xs font-light">Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="col-span-2 row-span-1">
+                <div class="group">
+                    <!-- img -->
+                    <div class="relative">
+                        <img class="max-h-[28rem] max-lg:max-h-[20rem] max-md:max-h-[12rem] max-sm:max-h-[15rem] w-full object-cover" src="./asset/img/item-5-1.jpg" alt="">
+                        <img class="max-h-[28rem] max-lg:max-h-[20rem] max-md:max-h-[12rem] max-sm:max-h-[15rem] w-full object-cover absolute top-0 left-0 right-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200" src="./asset/img/item-5-2.jpg" alt="">
+                        <div class="absolute z-[22] top-[1rem] right-0 bg-lightOrange w-fit px-5 py-1.5">
+                            <p class="text-[.875rem] font-semibold tracking-wider text-[#212529]">PRE-ORDER</p>
+                        </div>
+                    </div>
+                    <!-- detai -->
+                    <div class="pt-2 text-[#1a2456]">
+                        <div class="flex justify-between min-h-[2rem]">
+                            <p>MINI CONSOLE</p>
+                            <p class="group-hover:hidden">US$249</p>
+                            <div class="group-hover:block hidden px-4 py-1 h-fit bg-[#1a2456] rounded-full text-white">   
+                                <p class="text-sm font-medium">SHOP NOW</p>
+                            </div>
+                        </div>
+                        <p class="text-[#1a2456] text-xs font-light">Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="bg-[url('./asset/img/shop-banner-module.jpg')] bg-contain w-full bg-no-repeat bg-bottom min-h-[30em] max-md:min-h-[20em] max-md:pt-[2rem] bg-[#C4C4C4] pt-[5rem]">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-4xl text-[#1A2456] font-semibold tracking-widest">CREATE YOUR OWN CONSOLE</h2>
+                <p class="text-[#1A2456] text-lg font-light mt-5">Add-on to make it perfect.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#1a2456] p-[3rem]">
+        <div class="text-[#efc2b3] text-xs grid grid-cols-12 max-lg:gap-y-8 max-sm:gap-x-3">
+          
+            <div class="col-span-2 max-lg:col-span-4 order-1 max-sm:col-span-6 max-sm:order-2">
+                <h2 class="font-semibold">MONOGRAM</h2>
+                <p class="mt-4 leading-5">305 King St. W. <br>
+                    Suite 502 <br>
+                    Kitchener, ON <br>
+                    Canada</p>
+            </div>
+
+            <div class="col-span-4 max-lg:col-span-6 order-6 max-lg:order-1 max-sm:col-span-12 max-sm:order-1">
+                <h2 class="font-semibold">SUBSCRIBE TO MONOGRAM</h2>
+                <p class="mt-4">Master productivity with Creative Console and get all the latest Monogram news.</p>
+                <div class="mt-3">
+                    <form class="space-x-3" action="" method="post">
+                        <input class="border border-[#efc2b3] ps-3 w-[50%] py-1.5 bg-transparent" type="Email" placeholder="Email Address">
+                        <input class="px-5 py-1 rounded-full text-xs bg-[#A58B92] text-[#1a2456]" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+                <div class="flex items-center space-x-2 mt-4">
+                    <div class="size-7 rounded-full bg-[#efc2b3] flex justify-center items-center">
+                        <i class="ri-instagram-line text-[#1a2456]"></i>
+                    </div>
+                    <div class="size-7 rounded-full bg-[#efc2b3] flex justify-center items-center">
+                        <i class="ri-twitter-fill text-[#1a2456]"></i>
+                    </div>
+                    <div class="size-7 rounded-full bg-[#efc2b3] flex justify-center items-center">
+                        <i class="ri-facebook-fill text-[#1a2456]"></i>
+                    </div>
+                    <div class="size-7 rounded-full bg-[#efc2b3] flex justify-center items-center">
+                        <i class="ri-youtube-fill text-[#1a2456]"></i>
+                    </div>
+                </div>
+              
+            </div>
+          
+            <div class="col-span-2 max-lg:col-span-4 order-3 max-sm:col-span-6">
+                <h2 class="font-semibold">QUICK LINKS</h2>
+                <div class="flex flex-col space-y-2 mt-4">
+                    <a href="#">Home</a>
+                    <a href="#">How it Works</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Download</a>
+                </div>
+            </div>
+          
+            <div class="col-span-2 max-lg:col-span-4 order-4 max-sm:col-span-6">
+                <h2 class="font-semibold">HELP</h2>
+               <div class="mt-4 flex flex-col space-y-2">
+                <a href="#">FAQs</a>
+                <a href="#">Support Center</a>
+                <a href="#">Shipping and Sales</a>
+               </div>
+            </div>
+          
+            <div class="col-span-2 max-lg:col-span-4 order-5 max-sm:col-span-6">
+                <h2 class="font-semibold">INFORMATION</h2>
+              <div class="flex flex-col space-y-2 mt-4">
+                <a href="#">About Us</a>
+                <a href="#">Work with us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Terms of Sale</a>
+                <a href="#">Press Kit</a>
+              </div>
+            </div>
+
+            <div class="text-sm mt-4 col-span-full order-8">
+                <p>&copy Monogram 2024</p>
+            </div>
+          
+        </div>
+    </footer>
+    
+
+    <script src="./asset/js/main.js"></script>
+
+</body>
+
+</html>
